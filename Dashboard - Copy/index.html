@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidenav">
+            <div class="one">
+                <h2 class="username">Username</h2>
+                <hr>
+                <button class="dropdown-btn">My Desk
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container-two">
+                    <a href="#">Observation View</a>
+                    <a href="#">Workflow Management</a>
+                    <a href="#">Data Integration System</a>
+                    <a href="#">Analytics Web Platform</a>
+                    <div class="second-dropdown">
+                        <button class="dropdown-btn">Data Visualisation
+                            <i class="fa fa-caret-down"></i>
+                            <!-- <hr> -->
+                        </button>
+                        <div class="dropdown-container-two">
+                            <a href="#">Customer Segmentation</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Sales Performance</a>
+                            <a href="#">Sentiment Analysis</a>
+                        </div>
+
+                    </div>
+
+                    <a href="#">SQL Editor</a>
+                </div>
+            </div>
+            <div class="two">
+                <h3 class="toogle-heading">Dark Mode</h3>
+                <button class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="customer-segmentation-container">
+            <h1 class="main-heading">Customer Segmentation</h1>
+            <button class="generate-report">Generate Report</button>
+            <div class="area-one">
+                <div class="personality-traits">
+                    <p class="segmentation-subheading">Inactivity</p>
+                    <div class="chart-container">
+                        <canvas id="personalityChart" width="300" height="300"></canvas>
+                    </div>
+                </div>
+                <div class="bar-graph-container">
+                    <p class="segmentation-subheading">Shopping Cart Values</p>
+                    <div class="graph-container">
+                        <canvas id="hobbiesBarGraph" width="700" height="350"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "area-two">
+                <div class="chart">
+                    <p class = "segmentation-subheading">Number of sessions to the website</p>
+                    <div class = "contt">
+                        <canvas id="myChart" width="300" height="300"></canvas>
+                    </div>
+                </div>
+                
+                <div class="charttwo">
+                    <div class="chartt">
+                        <p class = "segmentation-subheading">Number of pages visited</p>
+                        <div class = "contttoo">
+                            <canvas id="myCharttwo" width="300" height="300"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chartthree">
+                    <div class="charttt">
+                        <p class = "segmentation-subheading">URL's visited</p>
+                        <div class = "conttthr">
+                            <canvas id="myChartthr" width="300" height="300"></canvas>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="area-three">
+                <div class="exit">
+                    <p class="segmentation-subheading">Exit intent</p>
+                    <div class="thirdchart-container">
+                        <canvas id="exChart" width="300" height="300"></canvas>
+                    </div>
+                </div>
+                <div class="secbar-graph-container">
+                    <p class="segmentation-subheading">Pages Types Visited</p>
+                    <div class="sgraph-container">
+                        <canvas id="pagesBarGraph" width="700" height="350"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="area-four">
+                <p class="segmentation-subheading">Referral Sources</p>
+                <div class="ref-style-graph-container">
+                    <canvas id="refstyleBarGraph" width="300" height="300"></canvas>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

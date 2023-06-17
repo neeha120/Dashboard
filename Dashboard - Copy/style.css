@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+}
+
+hr {
+  margin-top: 10px;
+  color: rgb(90, 87, 87);
+  height: 2px;
+  margin-bottom: 5px;
+}
+
+.username {
+  color: #000;
+  text-align: center;
+}
+
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 35vh;
+  /* change color */
+  background-color: gray;
+  overflow-x: hidden;
+  padding: 20px 10px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a,
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  /* change color */
+  color: white;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover,
+.dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px;
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: gray;
+  color: white;
+}
+
+/* Dropdown container (hidden by default) */
+.dropdown-container-two {
+  display: none;
+  /* change color */
+  background-color: gray;
+  padding-left: 8px;
+}
+
+.second-dropdown {
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Customer Segmentation Starts */
+.main-heading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.light-mode-button {
+  background: 0;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 40px;
+  width: 30px;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.light-mode-button:focus {
+  outline: none;
+}
+
+.light-mode-button span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 25px;
+  border-radius: 25px;
+  background-color: #d6d7db;
+  box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
+  transition: 0.3s;
+}
+
+.light-mode-button span:nth-child(2) {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
+  transition: 0.3s;
+}
+
+.two {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: top;
+}
+
+.toogle-heading {
+  color: #fff;
+}
+
+body {
+  background-color: #f6f6f6;
+  transition: background-color 0.3s;
+}
+
+body[light-mode="dark"] {
+  background-color: #141516;
+  color: #ced4e2;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(1) {
+  background-color: #ced4e2;
+  color: #141516;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(2) {
+  left: 28px;
+  background-color: #141516;
+}
+
+body[light-mode="dark"] .generate-report {
+  background-color: #ced4e2;
+  color: #141516;
+}
+
+.generate-report {
+  background: transparent;
+  border: 1px solid black;
+  padding: 12px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.segmentation-subheading {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.area-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.bar-graph-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 70px;
+  margin-right: 0px;
+}
+
+.area-two{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+
+.area-three {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.secbar-graph-container {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: center;
+  margin-bottom:45px;
+  margin-left: 70px;
+  margin-right: 0px;
+}
+
+.ref-style-graph-container {
+  margin-top: 410px;
+  transform: rotate(90deg);
+}
