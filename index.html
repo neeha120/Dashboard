@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body font="https://fonts.google.com/specimen/Inter">
     <div class="container">
         <div class="sidenav">
             <div class="one">
-                <h2 class="username">Username</h2>
+                <h2 class="username">Jane Cooper</h2>
                 <hr>
                 <button class="dropdown-btn">My Desk
                     <i class="fa fa-caret-down"></i>
@@ -40,67 +40,71 @@
                     <a href="#">SQL Editor</a>
                 </div>
             </div>
-            <div class="two">
-                <h3 class="toogle-heading">Dark Mode</h3>
-                <button class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
+            
         </div>
 
-        <div class="customer-segmentation-container" style="width: 100%;">
-            <h1 class="main-heading">Customer Segmentation</h1>
-            <button class="generate-report">Generate Report</button>
-            <div class="donut-chart-container">
-                <div class="personality-traits">
-                    <p class="segmentation-subheading">Personality-Traits</p>
-                    <div class="chart-container">
-                        <canvas id="personalityChart" width="300" height="300"></canvas>
-                    </div>
-                </div>
-                <div class="values">
-                    <p class="segmentation-subheading">Values</p>
-                    <div class="chart-container">
-                        <canvas id="valuesChart" width="300" height="300"></canvas>
-                    </div>
-                </div>
-                <div class="beliefs">
-                    <p class="segmentation-subheading">Beliefs</p>
-                    <div class="chart-container">
-                        <canvas id="beliefsChart" width="300" height="300"></canvas>
+        <div class="customer-segmentation-container">
+            <div class="main-heading">Observable View</div>
+            <div class="generate-report">Your Analysis</div>
+            
+            <div class="area-one">
+                <img align="left" src="icons8-increase-profits-24.png" width="35px" height="35px" alt="Views" style="margin-top: 20px; margin-right: 30px; margin-left: 17px; margin-bottom: 20px;">
+                </img>
+                <div class="box box1">
+                    <div class="text">
+                        <br/>
+                        <div class="thone"><b>Sales Forecast</b></div>
+            
+                        <div class="topico">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        
+                        <p>Suspendisse effictur turpis vel tortor tristique dignissim.</p>
+                        </br>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="bar-graph-container">
-                <p class="segmentation-subheading">Hobbies</p>
-                <div class="graph-container">
-                    <canvas id="hobbiesBarGraph" width="1000" height="500"></canvas>
-                </div>
-
+            <div class = "area-two">
+                <img align="left" src="icons8-query-inner-join-24.png" width="35px" height="35px" style="margin-top: 20px;  margin-right:30px; margin-left: 17px; margin-bottom: 20px;" alt="Views">
+                </img>
+                <div class="box box2">
+                    <div class="text"></br>
+                        <div class="thtwo"><b>Customer Segmentation</b></div>
+                        <div class="topic">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        
+                            <p>Suspendisse effictur turpis vel tortor tristique dignissim.<p>
+                            </br></div>
+                    </div>
+                </div>    
             </div>
 
-            <div class="third-section-container">
-                <div class="life-style-container">
-                    <p class="segmentation-subheading">Lifestyle</p>
-                    <div class="life-style-graph-container">
-                        <canvas id="lifestyleBarGraph" width="300" height="300"></canvas>
+            <div class="area-three">
+                <img align="left" src="icons8-circular-arrows-24.png" width="35px" height="35px" style="margin-top: 20px; margin-right: 30px; margin-left: 17px; margin-bottom: 20px;"
+                    alt="Views" class="imageo">
+                </img>
+                    <div class="box box3">
+                        <div class="text"></br>
+                            <div class="ththree"><b>Churn Rate</b></div>
+                            <div class="topicth">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                
+                                <p>Suspendisse effictur turpis vel tortor tristique dignissim.</p></br>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="life-goals-container">
-                    <p class="segmentation-subheading">Life Goals</p>
-                    <div class="chart-container">
-                        <canvas id="lifeGoalsChart" width="300" height="300"></canvas>
-                    </div>
-                </div>
             </div>
+
+            
+            
+
+            
+            
         </div>
-
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
     <script src="main.js"></script>
 </body>
-
 </html>
